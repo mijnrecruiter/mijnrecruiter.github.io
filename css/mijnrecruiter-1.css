@@ -1,0 +1,311 @@
+body {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	font-family: helvetica, arial, sans-serif;
+	background-color: #7a7676;
+	text-align: center;
+/* part 1 of 2 centering hack */
+}
+a {
+	text-decoration: underline;
+	font-weight: normal;
+	color:  #67c9d0;
+	outline: none;
+}
+a:visited {
+	color: #67c9d0;
+}
+a:active {
+	color:  #67c9d0;
+}
+a:hover {
+	color: #67c9d0;
+	text-decoration: none;
+}
+.ahem {
+	display: none;
+}
+strong, b {
+	font-weight: bold;
+}
+.contact {
+	list-style-type:none;
+	font-size: 12px;
+	line-height: 18px;
+	margin-left: 0px;
+	text-indent: -30px;
+}
+p {
+	font-size: 12px;
+	line-height: 18px;
+	margin-top: 0px;
+	margin-bottom: 0px; 
+}
+
+/* weird ie5win bug: all line-height to font-size ratios must agree or box gets pushed around. UPDATE: this has turned out to be very rare. my current recommendation is IGNORE this warning. at the moment i'm leaving it in only in case the issue turns up again. possibly the original bug in march 2001 was caused by an unusual combination of factors, although this solved it at the time.*/
+
+h1 {
+	font-size: 12px;
+	text-transform:uppercase;
+	line-height: 22px;
+	color:  #000000;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+img {
+	border: 0px solid #ccc;
+	padding: 0px;
+	margin: 0;
+}
+.nowrap {
+	white-space: nowrap;
+	font-size: 10px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+/* must be combined with nobr in html for ie5win */
+}
+.tiny {
+	font-size: 9px;
+	line-height: 16px;
+	margin-top: 15px;
+	margin-bottom: 5px; 
+}
+#content {
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: auto;
+	margin-left: auto; 	/* opera does not like 'margin:20px auto' */
+	background: #f3f3f3;
+	border: 1px solid #ffffff;
+	text-align:left; /* part 2 of 2 centering hack */
+	height: 860px;
+	width: 980px; /* ie5win fudge begins */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width: 980px;
+}
+html>body #content {
+	width: 980px; /* ie5win fudge ends */
+}
+
+#headlogo {
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: auto;
+	margin-left: auto; 	/* opera does not like 'margin:20px auto' */
+	background: #f3f3f3;
+	border: 0px solid #ccc;
+	height: 150px;
+	width: 980px; 
+}
+
+#menu{
+	margin: 0px;
+	width: 980px;
+	height: 118px;
+	background-color: #f3f3f3;
+	border: 0px solid #ccc;
+}
+
+#menu .marginmenu a{
+	margin-right: 1px;
+}
+
+#menu .tranc a{
+	float: left;
+	padding: 0px;
+	display: block;
+}
+#menu .mr a{
+	float: left;
+	padding: 0px;
+	background-image: url('../images/btn-1mr.png');
+	background-repeat: no-repeat;
+	border: 0px solid #ccc;
+	display: block;
+}
+#menu .mr a:hover{
+	background-image:url('../images/btn-1mr-mo.png');
+}
+
+#menu .ms a{
+	float: left;
+	padding: 0px;
+	background-image: url('../images/btn-1ms.png');
+	background-repeat: no-repeat;
+	border: 0px solid #ccc;
+	display: block;
+}
+#menu .ms a:hover{
+	background-image:url('../images/btn-1ms-mo.png');
+}
+
+#menu .mw a{
+	float: left;
+	padding: 0px;
+	background-image: url('../images/btn-1mw.png');
+	background-repeat: no-repeat;
+	border: 0px solid #ccc;
+	display: block;
+}
+#menu .mw a:hover{
+	background-image:url('../images/btn-1mw-mo.png');
+}
+#menu .mc a{
+	float: left;
+	padding: 0px;
+	background-image: url('../images/btn-1mc.png');
+	background-repeat: no-repeat;
+	border: 0px solid #ccc;
+	display: block;
+}
+#menu .mc a:hover{
+	background-image:url('../images/btn-1mc-mo.png');
+}
+
+#menu .mrf a{
+	float: left;
+	padding: 0px;
+	background-image: url('../images/btn-1mrf.png');
+	background-repeat: no-repeat;
+	border: 0px solid #ccc;
+	display: block;
+}
+#menu .mrf a:hover{
+	background-image:url('../images/btn-1mrf-mo.png');
+}
+
+#header {
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: auto;
+	margin-left: auto; 	/* opera does not like 'margin:20px auto' */
+	/*background-image:url('../images/nocure.jpg');*/
+	background-repeat: no-repeat;
+	background-color: #f3f3f3;	
+	border: 0px solid #ccc;
+	height: 58px;
+	width: 980px; 
+}
+#columnleft {
+	padding: 0px;
+	float: left;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px; 	/* opera does not like 'margin:20px auto' */
+	background-image:url('../images/balkje-47.png');
+	background-repeat: no-repeat;
+	background-color: #f3f3f3;	
+	border: 0px solid #ccc;
+	height: 380px;
+	width: 47px;
+}
+#columnmiddle {
+	padding: 0px;
+	float: left;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px; 	/* opera does not like 'margin:20px auto' */
+	/*background-image:url('../images/middle.png');*/
+	background-repeat: no-repeat;
+	background-color: #f3f3f3;	
+	border: 0px solid #ccc;
+	height: 380px;
+	width: 670px; 
+}
+#middleheader {
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px; 
+	height: 30px;
+	width: 635px; 
+	background-color: #ffffff;
+	border: 0px solid #ccc;
+}
+
+#middlecontent {
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px; 	/* opera does not like 'margin:20px auto' */
+	background: #ffffff;
+	border: 0px solid #ccc;
+	height: 300px;
+	width: 635px; 
+}
+#middleleft {
+	padding: 0px;
+	float: left;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px; 	/* opera does not like 'margin:20px auto' */
+	font-color: #000000;
+	background: #ffffff;
+	border: 0px solid #ccc;
+	height: 250px;
+	width: 20px;
+}
+
+#middletext {
+	padding: 0px;
+	float: left;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px; 	/* opera does not like 'margin:20px auto' */
+	font-color: #000000;
+	background: #ffffff;
+	/*column-count: 2;
+	column-gap: 20px;
+	-moz-column-count:2;
+	-moz-column-gap: 20px;
+	-webkit-column-count:2;
+	-webkit-column-gap: 20px;*/
+	border: 0px solid #ccc;
+	height: 255px;
+	width: 595px;
+}
+#middletext p {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+#columnright {
+	padding: 0px;
+	float: left;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: auto; 	/* opera does not like 'margin:20px auto' */
+	/*background-image:url('../images/right.png');*/
+	background-repeat: no-repeat;
+	background-color: #f3f3f3;	
+	border: 0px solid #ccc;
+	height: 380px;
+	width: 258px; 
+}
+#footer {
+	padding: 0px;
+	float: left;
+	margin-top: auto;
+	margin-bottom: 0px;
+	margin-right: auto;
+	margin-left: 0px; 	/* opera does not like 'margin:20px auto' */
+	background-image:url('../images/footer.png');
+	border: 0px solid #ffffff;
+	text-align:left; /* part 2 of 2 centering hack */
+	height: 101px;
+	width: 980px; /* ie5win fudge begins */
+}
